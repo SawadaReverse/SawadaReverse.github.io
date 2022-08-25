@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>さわだのぺ〜じ</title>
+  </head>
+  <body>
+    <a id="top"></a>
+
+    <!-- Navigation bar(hide on width grater than 'sm') -->
+    <header class="pb-5 pb-md-0">
+      <nav
+        class="navbar navbar-light bg-light border-bottom mb-5 shadow-lg fixed-top d-md-none"
+      >
+        <div class="container-fluid">
+          <!-- Page logo or title -->
+          <a href="#top" class="navbar-brand h1 ms-4">さわだのぺ〜じ</a>
+
+          <!-- Hamburger icon -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation bar items -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <!-- Move to Top -->
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="nav-link btn btn-light"
+                  onclick="location.href='#top'"
+                  data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show"
+                >
+                  とっぷ
+                </button>
+              </li>
+
+              <!-- Move to Services -->
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="nav-link btn btn-light"
+                  onclick="location.href='#service'"
+                  data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show"
+                >
+                  さーびす
+                </button>
+              </li>
+
+              <!-- Move to Skills -->
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="nav-link btn btn-light"
+                  onclick="location.href='#skill'"
+                  data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show"
+                >
+                  できること
+                </button>
+              </li>
+
+              <!-- Move to Hobby -->
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="nav-link btn btn-light"
+                  onclick="location.href='#hobby'"
+                  data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show"
+                >
+                  すきなもの
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-5 d-grid gap-4 text-center">
+      <!-- Face icon -->
+      <img
+        src="https://public.sawada.pro/icons/face"
+        alt="さわだのかお"
+        class="rounded-circle mx-auto"
+        style="width: min(300px, 60%)"
+      />
+
+      <h2>さわだ</h2>
+
+      <p>かけだし　えんじにあ　！</p>
+
+      <!-- SNS icon -->
+      <div class="d-flex justify-content-center gap-5">
+        <!-- Twitter -->
+        <a
+          href="https://twitter.com/09224"
+          class="text-decoration-none"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="d-grid text-warning">
+            <i class="fa-brands fa-twitter display-1"></i>
+            <small>ついったー</small>
+          </div>
+        </a>
+
+        <!-- Discord -->
+        <a
+          href="https://discord.com/users/399042160063807489"
+          class="text-decoration-none"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="d-grid text-warning">
+            <i class="fa-brands fa-discord display-1"></i>
+            <small>でぃすこーど</small>
+          </div>
+        </a>
+
+        <!-- GitHub -->
+        <a
+          href="https://github.com/SawadaReverse"
+          class="text-decoration-none"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="d-grid text-warning">
+            <i class="fa-brands fa-github display-1"></i>
+            <small>ぎっとはぶ</small>
+          </div>
+        </a>
+
+        <!-- Blog -->
+        <a
+          href="https://blog.sawada.pro"
+          class="text-decoration-none"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="d-grid text-warning">
+            <i class="fa-solid fa-blog display-1"></i>
+            <small>ぶろぐ</small>
+          </div>
+        </a>
+      </div>
+
+      <!-- Services -->
+      <div class="d-md-flex justify-content-center">
+        <div class="card mx-3 mx-lg-5 mb-5">
+          <a id="service"></a>
+          <div class="card-body">
+            <h2 class="card-title mb-4">さーびす</h2>
+
+            <p class="card-text">
+              <a
+                href="https://orp.sawada.pro"
+                class="text-warning text-decoration-none"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                オモコロランダムページ
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="card mx-3 mx-lg-5 mb-5">
+          <a id="skill"></a>
+          <div class="card-body">
+            <h2 class="card-title mb-4">できること</h2>
+            <p class="card-subtitle mb-4">ちょっと　だけ　できる ！</p>
+            <div class="card-text">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Python</li>
+                <li class="list-group-item">Golang</li>
+                <li class="list-group-item">Java</li>
+                <li class="list-group-item">NuxtTS</li>
+                <li class="list-group-item">ねっとわーく(Cisco, YAMAHA)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobby -->
+        <div class="card mx-3 mx-lg-5 mb-5">
+          <a id="hobby"></a>
+          <div class="card-body">
+            <h2 class="card-title mb-3">すきなもの</h2>
+
+            <div class="card-text">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">くるま</li>
+                <li class="list-group-item">いんたーねっと</li>
+                <li class="list-group-item">おとげー</li>
+                <li class="list-group-item">おもしろいもの</li>
+                <li class="list-group-item">だいだいいろ</li>
+                <li class="list-group-item">めんるい</li>
+                <li class="list-group-item">だーつ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome js -->
+    <script
+      src="https://kit.fontawesome.com/57a005cd26.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
