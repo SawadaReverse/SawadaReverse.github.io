@@ -103,14 +103,84 @@
       </nav>
     </header>
 
-    <main class="container px-5 text-center">
+    <main class="container text-center my-4 px-5">
       <!-- Face icon -->
-      <div class="my-4">
+      <!-- <div class="my-4">
         <img
           src="https://public.sawada.pro/icons/face"
           alt="さわだのかお"
           class="rounded-circle face-icon"
         />
+      </div> -->
+
+      <div
+        id="iconCarousel"
+        class="carousel carousel-dark slide icon-carousel mx-auto"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#iconCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="face"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#iconCarousel"
+            data-bs-slide-to="1"
+            aria-label="fire_sawada"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#iconCarousel"
+            data-bs-slide-to="2"
+            aria-label="namayake"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://public.sawada.pro/icons/face"
+              class="d-block w-100 rounded-circle"
+              alt="にがおえ"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://public.sawada.pro/icons/fire_sawada"
+              class="d-block w-100 rounded-circle"
+              alt="手から火を出すさわだ"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://public.sawada.pro/icons/namayake"
+              class="d-block w-100 rounded-circle"
+              alt="生焼けコッペパン"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#iconCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#iconCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
       <!-- Profile -->
