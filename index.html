@@ -12,15 +12,19 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <!-- Handmade CSS -->
+    <link rel="stylesheet" href="style.css" />
+
     <title>さわだのぺ〜じ</title>
   </head>
   <body>
     <a id="top"></a>
 
-    <!-- Navigation bar(hide on width grater than 'sm') -->
-    <header class="pb-5 pb-md-0">
+    <!-- Navigation bar(hide on width grater than 'lg') -->
+    <header class="pb-5 pb-lg-0">
       <nav
-        class="navbar navbar-light bg-light border-bottom mb-5 shadow-lg fixed-top d-md-none"
+        class="navbar navbar-light bg-light border-bottom shadow-lg fixed-top d-lg-none"
       >
         <div class="container-fluid">
           <!-- Page logo or title -->
@@ -55,7 +59,7 @@
                 </button>
               </li>
 
-              <!-- Move to Services -->
+              <!-- Move to #service -->
               <li class="nav-item">
                 <button
                   type="button"
@@ -68,7 +72,7 @@
                 </button>
               </li>
 
-              <!-- Move to Skills -->
+              <!-- Move to #skill -->
               <li class="nav-item">
                 <button
                   type="button"
@@ -81,7 +85,7 @@
                 </button>
               </li>
 
-              <!-- Move to Hobby -->
+              <!-- Move to #hobby -->
               <li class="nav-item">
                 <button
                   type="button"
@@ -99,21 +103,24 @@
       </nav>
     </header>
 
-    <main class="mt-5 d-grid gap-4 text-center">
+    <main class="container px-5 text-center">
       <!-- Face icon -->
-      <img
-        src="https://public.sawada.pro/icons/face"
-        alt="さわだのかお"
-        class="rounded-circle mx-auto"
-        style="width: min(300px, 60%)"
-      />
+      <div class="my-4">
+        <img
+          src="https://public.sawada.pro/icons/face"
+          alt="さわだのかお"
+          class="rounded-circle face-icon"
+        />
+      </div>
 
-      <h2>さわだ</h2>
-
-      <p>かけだし　えんじにあ　！</p>
+      <!-- Profile -->
+      <div class="my-4">
+        <h2>さわだ</h2>
+        <p>かけだし　えんじにあ　！</p>
+      </div>
 
       <!-- SNS icon -->
-      <div class="d-flex justify-content-center gap-5">
+      <div class="d-flex justify-content-center gap-5 my-4">
         <!-- Twitter -->
         <a
           href="https://twitter.com/09224"
@@ -168,31 +175,34 @@
       </div>
 
       <!-- Services -->
-      <div class="d-md-flex justify-content-center">
-        <div class="card mx-3 mx-lg-5 mb-5">
+      <div class="d-lg-flex justify-content-center">
+        <div class="card mx-lg-5 my-4 px-2">
           <a id="service"></a>
           <div class="card-body">
-            <h2 class="card-title mb-4">さーびす</h2>
-
-            <p class="card-text">
-              <a
-                href="https://orp.sawada.pro"
-                class="text-warning text-decoration-none"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                オモコロランダムページ
-              </a>
-            </p>
+            <h2 class="card-title my-3">さーびす</h2>
+            <div class="card-text">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a
+                    href="https://orp.sawada.pro"
+                    class="text-warning text-decoration-none"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    オモコロランダムページ
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <!-- Skills -->
-        <div class="card mx-3 mx-lg-5 mb-5">
+        <div class="card mx-lg-5 my-4 px-2">
           <a id="skill"></a>
           <div class="card-body">
-            <h2 class="card-title mb-4">できること</h2>
-            <p class="card-subtitle mb-4">ちょっと　だけ　できる ！</p>
+            <h2 class="card-title my-3">できること</h2>
+            <p class="card-subtitle mb-4">ちょっと　だけ　できる　！</p>
             <div class="card-text">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">Python</li>
@@ -206,10 +216,10 @@
         </div>
 
         <!-- Hobby -->
-        <div class="card mx-3 mx-lg-5 mb-5">
+        <div class="card mx-lg-5 my-4 px-2">
           <a id="hobby"></a>
           <div class="card-body">
-            <h2 class="card-title mb-3">すきなもの</h2>
+            <h2 class="card-title my-3">すきなもの</h2>
 
             <div class="card-text">
               <ul class="list-group list-group-flush">
