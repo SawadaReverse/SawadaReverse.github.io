@@ -1,0 +1,17 @@
+.icon-carousel {
+  width: min(300px, 60%);
+}
+
+/* scroll offset */
+#service,
+#skill,
+#hobby {
+  display: block;
+  margin-top: -4rem;
+  padding-top: 4rem;
+}
+
+.favorite-color-link {
+  color: #ff7300;
+  text-decoration: none;
+}
