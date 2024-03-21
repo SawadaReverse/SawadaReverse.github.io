@@ -1,3 +1,13 @@
+body {
+  max-width: 1100px;
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+main {
+  background-color: white;
+}
+
 .icon-carousel {
   width: min(300px, 60%);
 }
@@ -14,4 +24,8 @@
 .favorite-color-link {
   color: #ff7300;
   text-decoration: none;
+}
+
+.icon-description {
+  margin-top: 10px;
 }
